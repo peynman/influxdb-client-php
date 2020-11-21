@@ -117,7 +117,12 @@ class Client
         }
     }
 
-    private function getGuzzleClient()
+    /**
+     * Undocumented function
+     *
+     * @return DefaultApi
+     */
+    public function getGuzzleClient()
     {
         $defaultApi = new DefaultApi($this->options);
         return $defaultApi->http;
